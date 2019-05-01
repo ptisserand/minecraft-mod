@@ -1,12 +1,13 @@
 package com.pragmarob.minecraft.mod.tutorial;
 
+import com.pragmarob.minecraft.mod.tutorial.item.ModItems;
+import com.pragmarob.minecraft.mod.tutorial.proxy.CommonProxy;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-
-import com.pragmarob.minecraft.mod.tutorial.proxy.CommonProxy;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = TutorialMod.modId, name = TutorialMod.name, version = TutorialMod.version, acceptedMinecraftVersions = "[1.10.2]")
 public class TutorialMod {
@@ -24,6 +25,7 @@ public class TutorialMod {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         System.out.println(name + " is loading!");
+        ModItems.init();
     }
 
     @Mod.EventHandler
