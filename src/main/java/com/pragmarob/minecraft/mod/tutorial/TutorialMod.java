@@ -9,12 +9,11 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = TutorialMod.modId, name = TutorialMod.name, version = TutorialMod.version, acceptedMinecraftVersions = "[1.10.2]")
+@Mod(modid = TutorialMod.modId, acceptedMinecraftVersions = "[1.10.2]")
 public class TutorialMod {
 
-    public static final String modId = "tutorial";
-    public static final String name = "Tutorial mod";
-    public static final String version = "0.0.1";
+    public static final String modId = "caca";
+    public static final String name = "Caca mod";
 
     @Mod.Instance(modId)
     public static TutorialMod instance;
