@@ -1,5 +1,6 @@
 package com.pragmarob.minecraft.caca;
 
+import com.pragmarob.minecraft.caca.block.ModBlocks;
 import com.pragmarob.minecraft.caca.item.ModItems;
 import com.pragmarob.minecraft.caca.proxy.CommonProxy;
 
@@ -25,6 +26,7 @@ public class CacaMod {
     public void preInit(FMLPreInitializationEvent event) {
         System.out.println(name + " is loading!");
         ModItems.init();
+        ModBlocks.init();
     }
 
     @Mod.EventHandler
