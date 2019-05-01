@@ -1,9 +1,12 @@
 package com.pragmarob.minecraft.mod.tutorial;
 
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+
+import com.pragmarob.minecraft.mod.tutorial.proxy.CommonProxy;
 
 @Mod(modid = TutorialMod.modId, name = TutorialMod.name, version = TutorialMod.version, acceptedMinecraftVersions = "[1.10.2]")
 public class TutorialMod {
@@ -14,6 +17,9 @@ public class TutorialMod {
 
     @Mod.Instance(modId)
     public static TutorialMod instance;
+
+    @SidedProxy(serverSide = "com.pragmarob.minecraft.mod.tutorial.proxy.CommonProxy", clientSide = "com.pragmarob.minecraft.mod.tutorial.proxy.ClientProxy")
+    public static CommonProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -27,6 +33,6 @@ public class TutorialMod {
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-        
+
     }
 }
