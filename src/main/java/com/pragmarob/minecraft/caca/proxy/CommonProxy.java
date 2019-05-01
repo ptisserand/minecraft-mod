@@ -1,4 +1,4 @@
-package com.pragmarob.minecraft.mod.tutorial.proxy;
+package com.pragmarob.minecraft.caca.proxy;
 
 import net.minecraft.item.Item;
 

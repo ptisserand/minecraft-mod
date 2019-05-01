@@ -1,4 +1,4 @@
-package com.pragmarob.minecraft.mod.tutorial.item;
+package com.pragmarob.minecraft.caca.item;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;

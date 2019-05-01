@@ -1,9 +1,9 @@
-package com.pragmarob.minecraft.mod.tutorial.item;
+package com.pragmarob.minecraft.caca.item;
+
+import com.pragmarob.minecraft.caca.CacaMod;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-
-import com.pragmarob.minecraft.mod.tutorial.TutorialMod;
 
 public class ItemBase extends Item {
 
@@ -16,7 +16,7 @@ public class ItemBase extends Item {
     }
 
     public void registerItemModel() {
-        TutorialMod.proxy.registerItemRenderer(this, 0, name);
+        CacaMod.proxy.registerItemRenderer(this, 0, name);
     }
 
     @Override
